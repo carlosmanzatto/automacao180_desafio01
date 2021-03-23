@@ -1,0 +1,40 @@
+---
+- title: nome em branco
+  payload:
+    name: ''
+    email: bean333@teste.com.br
+    password: '1234'
+  code: 412
+  error: required name
+- title: sem o campo nome
+  payload:
+    email: bean333@teste.com.br
+    password: '1234'
+  code: 412
+  error: required name
+- title: email em branco
+  payload:
+    name: Mr. Bean
+    email: ''
+    password: '1234'
+  code: 412
+  error: required email
+- title: sem o campo email
+  payload:
+    name: Mr. Bean
+    password: '1234'
+  code: 412
+  error: required email
+- title: senha em branco
+  payload:
+    name: Mr. Bean
+    email: bean333@teste.com.br
+    password: ''
+  code: 412
+  error: required password
+- title: sem o campo senha
+  payload:
+    name: Mr. Bean
+    email: bean333@teste.com.br
+  code: 412
+  error: required password
